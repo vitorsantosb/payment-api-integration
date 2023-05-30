@@ -5,7 +5,7 @@ export const Title = styled.h1 `
 `;
 
 export const Section = styled.div `
-    height: 98.5vh;
+    height: 80vh;
     width: 100%;
     background-image: url('/assets/background.jpg');
     background-repeat: no-repeat;

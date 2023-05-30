@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.aside `
-    width: 95vw;
+    width: 96vw;
     height: 6vh;
     background-color: ${props => props.theme.colors.white};
     border-radius: 1.2rem;
