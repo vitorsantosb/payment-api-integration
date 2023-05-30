@@ -1,0 +1,19 @@
+{
+  "name": "payment-api-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorsantosb/payment-api-integration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorsantosb/payment-api-integration/issues"
+  },
+  "homepage": "https://github.com/vitorsantosb/payment-api-integration#readme"
+}
