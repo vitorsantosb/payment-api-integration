@@ -5,24 +5,35 @@ export const Title = styled.h1 `
 `;
 
 export const Section = styled.div `
-    height: 70vh;
     width: 100%;
+    height: 60vh;
+    min-height: 30vh;
     background-image: url('/assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 `;
 
-export const Catchphrase = styled.div `
-    text-align: center;
+export const TextureBg = styled.div `
     width: 100%;
-    padding-top: 10rem;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
+export const Catchphrase = styled.div `
     h2 {
         font-family: 'Bodoni Moda', serif;
-        font-size: 6rem;
+        font-size: 5rem;
         color: ${props => props.theme.colors.white};
-        padding-bottom: 3rem;
+        padding: 2rem 0;
+    }
+
+    button{
+      margin: 0 auto;
     }
 
     button:hover{cursor: pointer}
@@ -33,13 +44,15 @@ export const Catchphrase = styled.div `
       border-radius: 0.5rem;
       padding: 15px 50px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     button:hover:before{opacity: 1; transform: translate(0,0);}
     button:before{
       content: attr(data-hover);
       position: absolute;
-      top: 1.4em; left: 0;
       width: 100%;
       text-transform: uppercase;
       letter-spacing: 3px;
@@ -59,5 +72,17 @@ export const Catchphrase = styled.div `
         font-size: .8em;
         transition: all .3s ease-in-out;
         color: ${props => props.theme.colors.black};
+      }
+
+      @media (max-width: 1010px) {
+        h2 {
+          font-size: 4.5rem;
+        }
+      }
+
+      @media (max-width: 850px) {
+        h2 {
+          font-size: 4rem;
+        }
       }
 `;

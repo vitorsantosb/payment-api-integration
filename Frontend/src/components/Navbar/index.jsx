@@ -1,4 +1,5 @@
 import {
+    MenuSidebar,
     Container,
     Logo,
     Menu,
@@ -6,17 +7,22 @@ import {
     SearchContainer,
     Functionalities,
     IconFunctionalities,
+    Burguer
 } from "./styles";
 
 import { HiUserCircle,
         HiShoppingCart,
         HiOutlineSearch,
+        HiOutlineMenuAlt1,
 } from 'react-icons/hi';
 
 export default function Sidebar() {
     return(
-        <div style={{width: '100%', paddingTop: '1rem'}}>
+        <MenuSidebar>
            <Container>
+                <Burguer>
+                    <HiOutlineMenuAlt1/>
+                </Burguer>
                 <Logo>Logo</Logo>
                 <Menu>
                     <Item>Home</Item>
@@ -42,6 +48,6 @@ export default function Sidebar() {
                     </div>
                 </Functionalities>
            </Container>
-        </div>
+        </MenuSidebar>
     );
 };
