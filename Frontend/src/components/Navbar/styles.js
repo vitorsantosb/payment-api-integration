@@ -6,7 +6,7 @@ export const Container = styled.aside `
     background-color: ${props => props.theme.colors.white};
     border-radius: 1.2rem;
     margin: 0 auto;
-    display: felx;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1.5rem;

@@ -15,7 +15,7 @@ import { HiUserCircle,
 
 export default function Sidebar() {
     return(
-        <div>
+        <div style={{width: '100%', paddingTop: '1rem'}}>
            <Container>
                 <Logo>Logo</Logo>
                 <Menu>
