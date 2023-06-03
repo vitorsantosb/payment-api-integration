@@ -7,16 +7,25 @@ import {
     SearchContainer,
     Functionalities,
     IconFunctionalities,
-    Burguer
+    Burguer,
+    SubMenu,
 } from "./styles";
 
 import { HiUserCircle,
         HiShoppingCart,
         HiOutlineSearch,
         HiOutlineMenuAlt1,
+        HiOutlineMenu,
 } from 'react-icons/hi';
 
 export default function Sidebar() {
+    const menuItems = [
+        { name: 'Home', link: '#' },
+        { name: 'Categorias', link: '#' },
+        { name: 'Ofertas', link: '#' },
+        { name: 'Contato', link: '#' },
+    ];
+
     return(
         <MenuSidebar>
            <Container>
@@ -25,9 +34,11 @@ export default function Sidebar() {
                 </Burguer>
                 <Logo>Logo</Logo>
                 <Menu>
-                    <Item>Home</Item>
-                    <Item>About</Item>
-                    <Item>Contact</Item>
+                    {menuItems.map((item, key) => {
+                        return(
+                            <Item key={key}>{item.name}</Item>
+                        );
+                    })}
                 </Menu>
                 <SearchContainer>
                     <input type="text" placeholder="Seraching..." />
@@ -48,6 +59,25 @@ export default function Sidebar() {
                     </div>
                 </Functionalities>
            </Container>
+           <SubMenu>
+                <aside>
+                    <div>
+                        <div>
+                            <HiOutlineMenu/>
+                        </div>
+                        <button>Todas as categorias</button>
+                    </div>
+
+                    <button>Promoções</button>
+                    <button>Feminino</button>
+                    <button>Masculino</button>
+                    <button>infantil</button>
+                    <button>Beleza</button>
+                    <button>Acessórios</button>
+                    <button>Presentes</button>
+                    <button>Outlet</button>
+                </aside>
+           </SubMenu>   
         </MenuSidebar>
     );
 };

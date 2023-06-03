@@ -1,11 +1,11 @@
 import {
     Section,
     Catchphrase,
-    TextureBg
+    TextureBg,
+    Deals
 } from "./styles";
 
 import Navbar from '../../components/Navbar/index';
-import CardProducts from "../../components/CardProducts";
 
 export default function Home() {
     return(
@@ -17,6 +17,9 @@ export default function Home() {
                     <button data-hover="Agora"><div>Comprar</div></button>
                 </Catchphrase>
             </TextureBg>
+            <Deals>
+                <h2>Ofertas do dia</h2>
+            </Deals>
         </Section>
     );
 };
