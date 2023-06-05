@@ -80,7 +80,9 @@ export const Functionalities= styled.div `
         gap: 0.5rem;
     }
 
-   
+    @media (max-width: 899px) {
+        display: none;
+    }
 `;
 
 export const IconFunctionalities = styled.div `
@@ -94,47 +96,5 @@ export const Burguer = styled.div `
 
     @media (max-width: 899px) {
         display: block;
-    }
-`;
-
-export const SubMenu = styled.div `
-    background-color: ${props => props.theme.colors.secundary};
-    display: block;
-
-    aside {
-        max-width: 1300px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-
-        button {
-            background: transparent;
-            color: #3d3d3d;
-            border: none;
-            cursor: pointer;
-            font-size: 1.4rem;
-            transition: 0.5s;
-            font-weight: 600;
-        }
-
-        div {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            
-            div {
-                font-size: 2.4rem;
-            }
-
-            button{
-                color: rgb(0,0,0,0.9);
-                font-weight: 600;
-            }
-        }
-    }
-
-    @media (max-width: 899px) {
-        display: none;
     }
 `;

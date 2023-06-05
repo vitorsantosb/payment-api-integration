@@ -8,7 +8,6 @@ import {
     Functionalities,
     IconFunctionalities,
     Burguer,
-    SubMenu,
 } from "./styles";
 
 import { HiUserCircle,
@@ -59,25 +58,6 @@ export default function Sidebar() {
                     </div>
                 </Functionalities>
            </Container>
-           <SubMenu>
-                <aside>
-                    <div>
-                        <div>
-                            <HiOutlineMenu/>
-                        </div>
-                        <button>Todas as categorias</button>
-                    </div>
-
-                    <button>Promoções</button>
-                    <button>Feminino</button>
-                    <button>Masculino</button>
-                    <button>infantil</button>
-                    <button>Beleza</button>
-                    <button>Acessórios</button>
-                    <button>Presentes</button>
-                    <button>Outlet</button>
-                </aside>
-           </SubMenu>   
         </MenuSidebar>
     );
 };
