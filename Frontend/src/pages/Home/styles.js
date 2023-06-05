@@ -114,12 +114,21 @@ export const Images = styled.section `
 `;
 
 export const Information = styled.section `
-  max-width: 1200px;
-  margin: 0 auto;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #242424;
+  padding: 1rem;
+  height: 10vh;
+
+  aside {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   figure {
     font-size: 3rem;
@@ -143,5 +152,16 @@ export const Information = styled.section `
   @media (max-width: 899px) {
     flex-direction: column;
     width: 80%;
+  }
+`;
+
+export const DealsOfTheDay = styled.section `
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  h2{
+    font-size: 3rem;
+    color: #262626;
   }
 `;

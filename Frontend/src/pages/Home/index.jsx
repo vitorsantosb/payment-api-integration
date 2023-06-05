@@ -4,13 +4,14 @@ import {
     TextureBg,
     Images,
     Information,
+    DealsOfTheDay,
 } from "./styles";
 
 import Navbar from '../../components/Navbar/index';
 
 import { MdOutlineLocalShipping } from 'react-icons/md';
-import { RiSecurePaymentFill } from 'react-icons/ri'
-import { TbTruckReturn } from 'react-icons/tb'
+import { RiSecurePaymentFill } from 'react-icons/ri';
+import { TbTruckReturn } from 'react-icons/tb';
 
 export default function Home() {
 
@@ -43,13 +44,14 @@ export default function Home() {
                 </div>
             </Images>
             <Information>
+              <aside>
                 <section>
                     <figure>
                         <MdOutlineLocalShipping/>
                     </figure>
                     <div>
                         <h4>Frete gratuito</h4>
-                        <p>Frete gratuito em comprars acima de R$100</p>
+                        <p>Frete gratuito em compras acima de R$100</p>
                     </div>
                 </section>
 
@@ -58,8 +60,8 @@ export default function Home() {
                         <RiSecurePaymentFill/>
                     </figure>
                     <div>
-                        <h4>Segurança</h4>
-                        <p>Pagamentos seguros</p>
+                        <h4>Seguro</h4>
+                        <p>Site confiável e toltalmente seguro</p>
                     </div>
                 </section>
                 <section>
@@ -70,8 +72,13 @@ export default function Home() {
                         <h4>Devolução</h4>
                         <p>Prazo de 30 dias para devoluções</p>
                     </div>
-                </section>
+                  </section>
+                </aside>
             </Information>
+
+            <DealsOfTheDay>
+              <h2>Ofertas do Dia</h2>
+            </DealsOfTheDay>
         </Section>
     );
 };
