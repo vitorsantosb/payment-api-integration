@@ -7,7 +7,7 @@ export const MenuSidebar = styled.div `
 `;
 
 export const Container = styled.aside `
-    max-width: 1300px;
+    max-width: 1200px;
     height: 7.8vh;
     margin: 0 auto;
     padding:0 1rem;

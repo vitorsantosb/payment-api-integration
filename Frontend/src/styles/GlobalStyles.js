@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle `
     body {
       font-family: 'Oswald', sans-serif;
       font-size: ${props => props.theme.fontSize};
+      background-color: #f8f8f8;
     }
 `;
 

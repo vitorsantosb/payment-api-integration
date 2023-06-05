@@ -87,8 +87,61 @@ button div{
 }
 `;
 
-export const Deals = styled.section `
-  h2 {
-    text-align: center;
+export const Images = styled.section `
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img {
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+`;
+
+export const Information = styled.section `
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  figure {
+    font-size: 3rem;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    width: 250px;
+  }
+
+  h2{
+      font-size: 3rem;
+      color: #262626;
+  }
+
+  @media (max-width: 899px) {
+    flex-direction: column;
+    width: 80%;
   }
 `;
