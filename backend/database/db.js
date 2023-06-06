@@ -15,15 +15,14 @@ const database = {
 async function mountCollections (db) {
     return {
         users: db.collection('users'),
-        sessions: db.collection('sessions'),
-        guilds: db.collection('guilds'),
+        products: db.collection('products'),
     };
 }
 
 async function GetDatabase () {
     if (!database.connection) {
         database.connection = await client.connect();
-        database.db = client.db('rpg-bot');
+        database.db = client.db('payment-api-db');
     }
 
     database.collections = await mountCollections(database.db);
