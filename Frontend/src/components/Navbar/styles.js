@@ -44,44 +44,16 @@ export const Item = styled.li `
     padding: 0.8rem;
 `;
 
-export const SearchContainer = styled.div `
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    border: 0.1rem solid #949494;
-    border-radius: 0.5rem;
-    padding: 0.2rem 1rem;
-    width: 30%;
-
-    input {
-        border: none;
-        width: 80%;
-    }
-
-    div {
-        cursor: pointer;
-    }
-
-    @media (max-width: 899px) {
-        width: 60%;
-    }
-`;
-
 export const Functionalities= styled.div `
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
     div {
         cursor: pointer;
         display: flex;
         align-items: center;
         gap: 0.5rem;
-    }
-
-    @media (max-width: 899px) {
-        display: none;
     }
 `;
 

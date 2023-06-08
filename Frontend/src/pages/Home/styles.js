@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const Title = styled.h1 `
   color: ${props => props.theme.colors.primary};
@@ -38,7 +39,7 @@ button{
 
 button:hover{cursor: pointer}
 button {
-  background: ${props => props.theme.colors.secundary};
+  background: ${props => props.theme.colors.primaryGreen};
   position: relative;
   border: none;
   border-radius: 0.5rem;
@@ -61,7 +62,7 @@ button:before{
   opacity: 0;
   transform: translate(-100%,0);
   transition: all .3s ease-in-out;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.white};
 }
 
 button:hover div{opacity: 0; transform: translate(100%,0)}
@@ -71,7 +72,7 @@ button div{
   font-weight: 800;
   font-size: .8em;
   transition: all .3s ease-in-out;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.white};
 }
 
 @media (max-width: 1010px) {
@@ -87,61 +88,44 @@ button div{
 }
 `;
 
-export const Images = styled.section `
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  figure {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  img {
-    border-radius: 10px;
-    margin: 0 auto;
-  }
-`;
-
 export const Information = styled.section `
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #242424;
-  padding: 1rem;
-  height: 10vh;
+  padding: 2rem 1rem;
+  height: 15vh;
 
   aside {
     width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   figure {
-    font-size: 3rem;
+    font-size: 4rem;
+    padding-top: 0.6rem;
+    color: ${props => props.theme.colors.primaryGreen};
+  }
+
+  h4 {
+    font-weight: 800;
+  }
+
+  p {
+    color: gray;
   }
 
   section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0.5rem 2rem;
-    width: 250px;
+    min-width: 150px;
   }
 
   h2{
@@ -149,19 +133,66 @@ export const Information = styled.section `
       color: #262626;
   }
 
-  @media (max-width: 899px) {
-    flex-direction: column;
-    width: 80%;
+  @media (max-width: 1059px) {
+    height: auto;
+    aside {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 `;
 
-export const DealsOfTheDay = styled.section `
-  max-width: 1200px;
+export const Images = styled.section `
+  width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 4rem;
 
-  h2{
-    font-size: 3rem;
-    color: #262626;
+  div {
+    display: flex;
+    gap: 1rem;
   }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+`;
+
+export const ImageMain = styled.div `
+  width: 500px;
+  height: 400px;
+  background-color: ${props => props,theme.colors.primaryBlue};
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  border-radius: 8px;
+`;
+
+export const ImageTop = styled.div `
+  width: 300px;
+  height: 200px;
+  background-color: ${props => props.theme.colors.primaryYellow};
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  border-radius: 8px;
+`;
+
+export const ImageDown = styled.div `
+  width: 610px;
+  height: 190px;
+  background-color: #d1d1d1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  border-radius: 8px;
 `;

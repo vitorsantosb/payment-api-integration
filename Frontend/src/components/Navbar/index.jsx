@@ -4,7 +4,6 @@ import {
     Logo,
     Menu,
     Item,
-    SearchContainer,
     Functionalities,
     IconFunctionalities,
     Burguer,
@@ -39,10 +38,6 @@ export default function Sidebar() {
                         );
                     })}
                 </Menu>
-                <SearchContainer>
-                    <input type="text" placeholder="Seraching..." />
-                    <div><HiOutlineSearch/></div>
-                </SearchContainer>
                 <Functionalities>
                     <div>
                         <IconFunctionalities>

@@ -4,7 +4,9 @@ import {
     TextureBg,
     Images,
     Information,
-    DealsOfTheDay,
+    ImageMain,
+    ImageTop,
+    ImageDown,
 } from "./styles";
 
 import Navbar from '../../components/Navbar/index';
@@ -13,13 +15,9 @@ import { MdOutlineLocalShipping } from 'react-icons/md';
 import { RiSecurePaymentFill } from 'react-icons/ri';
 import { TbTruckReturn } from 'react-icons/tb';
 
+import data from '../../data/products';
+
 export default function Home() {
-
-    const fakePictureOne = 'https://fakeimg.pl/300x200/?retina=1&text=Picture main';
-    const fakePictureTwo = 'https://fakeimg.pl/280x150';
-    const fakePictureThree = 'https://fakeimg.pl/280x150';
-    const fakePictureFour = 'https://fakeimg.pl/580x240';
-
     return(
         <Section>
             <Navbar/>
@@ -29,20 +27,6 @@ export default function Home() {
                     <button data-hover="Agora"><div>Comprar</div></button>
                 </Catchphrase>
             </TextureBg>
-            <Images>
-                <div>
-                    <img src={fakePictureOne} alt="" />
-                </div>
-                <div>
-                    <figure>
-                        <img src={fakePictureTwo} alt="" />
-                        <img src={fakePictureThree} alt="" />
-                    </figure>
-                    <div>
-                        <img src={fakePictureFour} alt="" />
-                    </div>
-                </div>
-            </Images>
             <Information>
               <aside>
                 <section>
@@ -50,8 +34,8 @@ export default function Home() {
                         <MdOutlineLocalShipping/>
                     </figure>
                     <div>
-                        <h4>Frete gratuito</h4>
-                        <p>Frete gratuito em compras acima de R$100</p>
+                        <h4>Free Shipping</h4>
+                        <p>Orders over $100</p>
                     </div>
                 </section>
 
@@ -60,25 +44,52 @@ export default function Home() {
                         <RiSecurePaymentFill/>
                     </figure>
                     <div>
-                        <h4>Seguro</h4>
-                        <p>Site confiável e toltalmente seguro</p>
+                        <h4>Smart Gift Card</h4>
+                        <p>Buy $1000 to get card</p>
                     </div>
                 </section>
+
+                <section>
+                    <figure>
+                        <RiSecurePaymentFill/>
+                    </figure>
+                    <div>
+                        <h4>Quick Payment</h4>
+                        <p>Buy $1000 to get card</p>
+                    </div>
+                </section>
+
                 <section>
                     <figure>
                         <TbTruckReturn/>
                     </figure>
                     <div>
-                        <h4>Devolução</h4>
-                        <p>Prazo de 30 dias para devoluções</p>
+                        <h4>24/7 Suport</h4>
+                        <p>Quick support</p>
                     </div>
                   </section>
                 </aside>
             </Information>
-
-            <DealsOfTheDay>
-              <h2>Ofertas do Dia</h2>
-            </DealsOfTheDay>
+            <Images>
+                <div style={{margin: '0 auto'}}>
+                    <ImageMain>
+                        <h2>500x300</h2>
+                    </ImageMain>
+                    <aside> 
+                        <div>
+                            <ImageTop>
+                                <h2>300x200</h2>
+                            </ImageTop>
+                            <ImageTop>
+                                <h2>300x200</h2>
+                            </ImageTop>
+                        </div>
+                        <ImageDown>
+                            <h2>610x190</h2>
+                        </ImageDown>
+                    </aside>
+                </div>
+            </Images>
         </Section>
     );
 };
