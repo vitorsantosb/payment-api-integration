@@ -13,8 +13,8 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false})); //Apenas dados simples;
 app.use(bodyParser.json());
 
-app.use('/api/v1', checkAuth);
-app.use('/api/user', userManager);
+//app.use('/api/v1', checkAuth);
+app.use('/api/v1/user', userManager);
 
 //Quando rotas não forem encontradas
 app.use((req, res, next) => {
