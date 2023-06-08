@@ -1,8 +1,17 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 
-export const Title = styled.h1 `
-  color: ${props => props.theme.colors.primary};
+export const Title = styled.div `
+  text-align: center;
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Section = styled.div `
@@ -195,4 +204,8 @@ export const ImageDown = styled.div `
   align-items: center;
   font-size: 2.4rem;
   border-radius: 8px;
+`;
+
+export const Arrivals = styled.section `
+  min-height: 100vh;
 `;

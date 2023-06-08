@@ -7,6 +7,8 @@ import {
     ImageMain,
     ImageTop,
     ImageDown,
+    Arrivals,
+    Title,
 } from "./styles";
 
 import Navbar from '../../components/Navbar/index';
@@ -90,6 +92,12 @@ export default function Home() {
                     </aside>
                 </div>
             </Images>
+            <Arrivals>
+                <Title>
+                    <h2>O que há de novo?</h2>
+                    <p>Confira os produtos mais promissores comprados por nossos compradores</p>
+                </Title>
+            </Arrivals>
         </Section>
     );
 };
