@@ -1,9 +1,9 @@
 const {serverInit} = require('./backend/init');
 
 async function init(){
-    await serverInit();
+	await serverInit();
 }
 
 init().catch(function (err){
-   console.log(err);
+	console.log(err);
 });
