@@ -4,8 +4,8 @@ import {
     TextureBg,
     Images,
     Information,
-    ImageMain,
-    ImageTop,
+    ImageOne,
+    ImageTwo,
     ImageDown,
     Arrivals,
     Title,
@@ -13,9 +13,9 @@ import {
 
 import Navbar from '../../components/Navbar/index';
 
-import { MdOutlineLocalShipping } from 'react-icons/md';
-import { RiSecurePaymentFill } from 'react-icons/ri';
-import { TbTruckReturn } from 'react-icons/tb';
+import { MdOutlineLocalShipping, MdPayments } from 'react-icons/md';
+import { SlPresent } from 'react-icons/sl';
+import { BsHeadset } from 'react-icons/bs'
 
 import data from '../../data/products';
 
@@ -43,7 +43,7 @@ export default function Home() {
 
                 <section>
                     <figure>
-                        <RiSecurePaymentFill/>
+                        <SlPresent/>
                     </figure>
                     <div>
                         <h4>Smart Gift Card</h4>
@@ -53,7 +53,7 @@ export default function Home() {
 
                 <section>
                     <figure>
-                        <RiSecurePaymentFill/>
+                        <MdPayments/>
                     </figure>
                     <div>
                         <h4>Quick Payment</h4>
@@ -63,7 +63,7 @@ export default function Home() {
 
                 <section>
                     <figure>
-                        <TbTruckReturn/>
+                        <BsHeadset/>
                     </figure>
                     <div>
                         <h4>24/7 Suport</h4>
@@ -73,18 +73,15 @@ export default function Home() {
                 </aside>
             </Information>
             <Images>
-                <div style={{margin: '0 auto'}}>
-                    <ImageMain>
-                        <h2>500x300</h2>
-                    </ImageMain>
+                <div>
                     <aside> 
                         <div>
-                            <ImageTop>
-                                <h2>300x200</h2>
-                            </ImageTop>
-                            <ImageTop>
-                                <h2>300x200</h2>
-                            </ImageTop>
+                            <ImageOne>
+                                <h2>500x200</h2>
+                            </ImageOne>
+                            <ImageTwo>
+                                <h2>500x200</h2>
+                            </ImageTwo>
                         </div>
                         <ImageDown>
                             <h2>610x190</h2>

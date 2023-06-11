@@ -134,7 +134,6 @@ export const Information = styled.section `
     gap: 1rem;
     border-radius: 5px;
     padding: 0.5rem 2rem;
-    min-width: 150px;
   }
 
   h2{
@@ -142,38 +141,65 @@ export const Information = styled.section `
       color: #262626;
   }
 
-  @media (max-width: 1059px) {
+  @media (max-width: 852px) {
     height: auto;
+
     aside {
-      flex-direction: column;
-      gap: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+    }
+
+    section {
+      margin: 0 auto;
+      width: 170px;
+    }
+  }
+
+  @media (max-width: 482px) {
+    aside {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin: 0 auto;
     }
   }
 `;
 
 export const Images = styled.section `
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  gap: 1rem;
   padding-bottom: 4rem;
 
   div {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     gap: 1rem;
   }
 
   aside {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
-export const ImageMain = styled.div `
-  width: 500px;
-  height: 400px;
-  background-color: ${props => props,theme.colors.primaryBlue};
+export const ImageOne = styled.div `
+  width: 100%;
+  height: 250px;
+  background-color: ${props => props.theme.colors.primaryBlue};
   color: white;
   display: flex;
   justify-content: center;
@@ -182,9 +208,9 @@ export const ImageMain = styled.div `
   border-radius: 8px;
 `;
 
-export const ImageTop = styled.div `
-  width: 300px;
-  height: 200px;
+export const ImageTwo = styled.div `
+  width: 100%;
+  height: 250px;
   background-color: ${props => props.theme.colors.primaryYellow};
   color: white;
   display: flex;
@@ -195,8 +221,8 @@ export const ImageTop = styled.div `
 `;
 
 export const ImageDown = styled.div `
-  width: 610px;
-  height: 190px;
+  width: 100%;
+  height: 300px;
   background-color: #d1d1d1;
   color: white;
   display: flex;
