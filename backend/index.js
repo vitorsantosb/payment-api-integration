@@ -1,7 +1,7 @@
 async function serverInit() {
 
 	const http = require('http');
-	const app = require('./routes/app');
+	const app = require('./src/routes/app');
 	const port = process.env.PORT || 3000;
 	const server = http.createServer(app);
 	server.listen(port, () => {
