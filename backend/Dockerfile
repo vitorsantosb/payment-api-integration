@@ -10,7 +10,7 @@ WORKDIR /usr/src/payment-api
 COPY package.json /usr/src/payment-api
 RUN npm install
 
-COPY . /usr/src/payment-api
+COPY .. /usr/src/payment-api
 
 # Start the bot.
 CMD ["node", "index.js"]

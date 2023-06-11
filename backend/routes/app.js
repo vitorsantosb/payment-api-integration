@@ -1,8 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const userManager = require('./user/userManager');
-const checkAuth = require('./authenticator/auth');
+//const userManager = require('./user/userManager');
+//const checkAuth = require('./authenticator/auth');
 const app = express();
 
 //dependencia para verificações na console do VSCODE
