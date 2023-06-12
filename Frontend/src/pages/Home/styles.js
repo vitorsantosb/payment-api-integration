@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from "../../styles/theme";
 
 export const Title = styled.div `
   text-align: center;
@@ -234,4 +233,10 @@ export const ImageDown = styled.div `
 
 export const Arrivals = styled.section `
   min-height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
+`;
+
+export const NewProducts = styled.div `
+
 `;
