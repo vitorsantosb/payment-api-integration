@@ -9,9 +9,11 @@ import {
     ImageDown,
     Arrivals,
     Title,
+    NewProducts,
 } from "./styles";
 
 import Navbar from '../../components/Navbar/index';
+import CardProducts from "../../components/CardProducts";
 
 import { MdOutlineLocalShipping, MdPayments } from 'react-icons/md';
 import { SlPresent } from 'react-icons/sl';
@@ -94,6 +96,10 @@ export default function Home() {
                     <h2>O que há de novo?</h2>
                     <p>Confira os produtos mais promissores comprados por nossos compradores</p>
                 </Title>
+
+                <NewProducts>
+                    <CardProducts/>
+                </NewProducts>
             </Arrivals>
         </Section>
     );
