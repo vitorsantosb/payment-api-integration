@@ -6,7 +6,8 @@ export const Container = styled.div `
 
     .mySwiper {
         width: 100%;
-        height: 60vh;
+        height: 55vh;
+        padding-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,7 +16,7 @@ export const Container = styled.div `
 
     .mySwiper img {
         display: block;
-        width: 80%;
+        width: 90%;
         height: 200px;
         margin: 0 auto;
     }
@@ -24,6 +25,13 @@ export const Container = styled.div `
         .mySwiper img {
             width: 70%;
             height: 250px;
+        }
+    }
+
+    @media (max-width: 639px) {
+        .mySwiper img {
+            width: 40%;
+            height: 200px;
         }
     }
 `;

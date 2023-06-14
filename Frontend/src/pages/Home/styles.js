@@ -238,5 +238,5 @@ export const Arrivals = styled.section `
 `;
 
 export const NewProducts = styled.div `
-
+  padding: 2rem;
 `;

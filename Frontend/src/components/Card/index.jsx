@@ -18,20 +18,22 @@ export default function Card({ name, image, price }) {
       };
 
     return(
-        <Container
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            <div
-                style={{display: display ? 'block' : 'none'}}
+        <div style={{margin: '0 auto'}}>
+            <Container
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
-                <aside>Conferir</aside>
-            </div>
-            <figure>
-                <img src={image} alt="image example" />
-            </figure>
-             <h2>{name}</h2>
-             <p>{price}</p>
-        </Container>
+                <div
+                    style={{display: display ? 'block' : 'none'}}
+                >
+                    <aside>Detalhes</aside>
+                </div>
+                <figure>
+                    <img src={image} alt="image example" />
+                </figure>
+                <h2>{name}</h2>
+                <p>R${price}</p>
+            </Container>
+        </div>
     );
 }
