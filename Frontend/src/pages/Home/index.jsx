@@ -12,14 +12,12 @@ import {
     NewProducts,
 } from "./styles";
 
-import Navbar from '../../components/Navbar/index';
-import CardProducts from "../../components/CardProducts";
+import Navbar from '../../components/Navbar/';
+import Slide from "../../components/Slide";
 
 import { MdOutlineLocalShipping, MdPayments } from 'react-icons/md';
 import { SlPresent } from 'react-icons/sl';
-import { BsHeadset } from 'react-icons/bs'
-
-import data from '../../data/products';
+import { BsHeadset } from 'react-icons/bs';
 
 export default function Home() {
     return(
@@ -98,7 +96,7 @@ export default function Home() {
                 </Title>
 
                 <NewProducts>
-                    <CardProducts/>
+                    <Slide/>
                 </NewProducts>
             </Arrivals>
         </Section>

@@ -233,7 +233,7 @@ export const ImageDown = styled.div `
 
 export const Arrivals = styled.section `
   min-height: 100vh;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
