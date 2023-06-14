@@ -6,7 +6,7 @@ export const Container = styled.div `
 
     .mySwiper {
         width: 100%;
-        height: 55vh;
+        height: auto;
         padding-top: 3rem;
         display: flex;
         justify-content: center;

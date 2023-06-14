@@ -210,7 +210,7 @@ export const ImageOne = styled.div `
 export const ImageTwo = styled.div `
   width: 100%;
   height: 250px;
-  background-color: ${props => props.theme.colors.primaryYellow};
+  background-color: ${props => props.theme.colors.primaryBlue};
   color: white;
   display: flex;
   justify-content: center;
