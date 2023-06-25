@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 const { MongoClient, Collection } = require('mongodb');
+require('dotenv').config();
 
 const url = process.env.MONGO_URI;
 const client = new MongoClient(url);
@@ -22,7 +24,7 @@ async function mountCollections (db) {
 async function GetDatabase () {
 	if (!database.connection) {
 		database.connection = await client.connect();
-		database.db = client.db('payment-api-db');
+		database.db = client.db('payment-api');
 	}
 
 	database.collections = await mountCollections(database.db);

@@ -1,3 +1,4 @@
+const CreateAndStorageUser = require('./src/test/createUser.test');
 async function serverInit() {
 
 	const http = require('http');
@@ -17,3 +18,4 @@ async function init(){
 init().catch(function (err){
 	console.log(err);
 });
+

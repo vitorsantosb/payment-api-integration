@@ -6,7 +6,6 @@ RUN mkdir -p /usr/src/payment-api
 
 WORKDIR /usr/src/payment-api
 
-
 COPY package.json /usr/src/payment-api
 RUN npm install
 

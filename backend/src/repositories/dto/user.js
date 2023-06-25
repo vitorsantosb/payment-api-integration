@@ -1,12 +1,19 @@
-function CreateUserData(user, generatedId, userEmail, passwordHash, ...filter){
-    return{
-        user: {
-            id: generatedId,
-            username: user,
-            password: passwordHash,
-            email: userEmail,
-        },
-        permissions: {},
-        ...filter
-    }
+function CreateUserData(user, generatedId, userEmail, passwordHash,) {
+	return {
+		user: {
+			id: generatedId,
+			user: {
+				username: user.name,
+				lastName: user.lastName,
+				birthday: user.birthday,
+			},
+			password: passwordHash,
+			email: userEmail,
+		},
+		paymentMethod: {},
+		purchase_history: {},
+		permissions: {},
+	};
 }
+
+module.exports = {CreateUserData};

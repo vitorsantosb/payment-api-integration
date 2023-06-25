@@ -1,8 +1,14 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+
+//Routes
+
 //const userManager = require('./user/userManager');
 //const checkAuth = require('./authenticator/auth');
+const user = require('./user/user.js');
+const test = require('./testRoute/test');
+
 const app = express();
 
 //dependencia para verificações na console do VSCODE
@@ -14,7 +20,9 @@ app.use(bodyParser.urlencoded({extended: false})); //Apenas dados simples;
 app.use(bodyParser.json());
 
 //app.use('/api/v1', checkAuth);
+app.use('/api/test', test);
 //app.use('/api/v1/user', userManager);
+//app.use('/api/v1/users', user);
 
 //Quando rotas não forem encontradas
 app.use((req, res, next) => {

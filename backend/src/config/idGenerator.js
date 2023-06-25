@@ -1,4 +1,4 @@
-import {v4 as uuidv4, validate} from 'uuid';
+const {uuidv4, validate} = require('uuid');
 
 function GenerateUserId(){
 	return uuidv4();

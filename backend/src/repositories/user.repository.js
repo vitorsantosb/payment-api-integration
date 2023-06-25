@@ -1,5 +1,5 @@
 //imports
-import {GetDatabase} from '../database/db';
+const {GetDatabase} = require('../database/db');
 async function StoreUser(user){
 	const collections = await GetDatabase();
 
@@ -8,9 +8,9 @@ async function StoreUser(user){
 	);
 }
 
-async function UserExistsById(user, userId){
+async function ExistsUserByEmail() {
 
 }
 
 
-module.exports = {StoreUser};
+module.exports = {StoreUser, ExistsUserByEmail};
